@@ -10052,6 +10052,7 @@ body {
 }
 .sb-nav-fixed .sb-topnav {
   z-index: 1039;
+  height:80px;
 }
 .sb-nav-fixed #layoutSidenav #layoutSidenav_nav {
   width: 225px;
