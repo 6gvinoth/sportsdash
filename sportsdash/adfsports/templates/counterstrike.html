@@ -8,10 +8,8 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>ADF Sports Meet</title>
-
-
-<link rel="icon" type="image/png" href="{% static 'adf-sports.png' %}"/>
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="icon" type="image/png" href="{% static 'adf-sports.png' %}"/>
         <!-- <link href="css/styles.css" rel="stylesheet" /> -->
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
@@ -53,12 +51,8 @@
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                             ></a>
                             <div class="collapse" id="collapseLayouts1" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <!-- <a class="nav-link" href="layout-static.html">Table Tennis</a> -->
-                                <!-- <a class="nav-link" href="layout-sidenav-light.html">Badminton</a> -->
-                                <!-- <a class="nav-link" href="layout-sidenav-light.html">Chess</a> -->
-                                <a class="nav-link" href="http://localhost:8000/cricketrules/">Cricket</a>
+                                  <a class="nav-link" href="http://localhost:8000/cricketrules/">Cricket</a>
                                 
                                 <a class="nav-link" href="http://localhost:8000/counterstrike/">Counter-Strike</a>
                                  <a class="nav-link" href="http://localhost:8000/football/">Football</a>
@@ -69,6 +63,8 @@
                                 ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 PointsSystem</a
                             >
+                            
+
                             
                         </div>
                     </div>
@@ -84,19 +80,86 @@
                 </main>
                 <footer class="py-4 bg-light mt-auto">
 
-                   <!--  <div class="container-fluid">
-
-                        <div class="card mb-4" width="100%" cellspacing="0">
-                            <div class="card-header"><i class="fas fa-table mr-1"></i>DataTable Example</div>
-                            <div class="card-body" >
-  <iframe src="http://localhost:3000/public/dashboard/b3d279be-9df6-4763-8cda-ce8c94c8fc16" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
-                        </div>
-                         </div>
-                         <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> -->
-
                          <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
-            <iframe style="width: 100vw;height: 100vh;position: relative; " src="http://localhost:3000/public/dashboard/353334da-a1c8-4b2b-b387-5f60e3ea0bd1" frameborder="0" allowfullscreen scrolling="yes" ></iframe>
+
+            <style>
+  .jumbotron {
+  position:relative;
+  overflow:hidden;
+}
+
+.jumbotron .container {
+  position:relative;
+  z-index:2;
+  
+  background:rgba(0,0,0,0.2);
+  padding:2rem;
+  border:1px solid rgba(0,0,0,0.1);
+  border-radius:3px;
+}
+
+.jumbotron-background {
+  object-fit:cover;
+  font-family: 'object-fit: cover;';
+  position:absolute;
+  top:0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  opacity:0.5;
+}
+
+img.blur {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+
+}
+
+  </style>
+<div class="jumbotron jumbotron-fluid bg-dark">
+  
+  <div class="jumbotron-background">
+    <img src="{% static 'bgj.jpg' %}" class="blur">
+  </div>
+
+  <div class="container text-white">
+    <h1>Counterstrike Rules</h1>
+<!-- here vinoth -->
+    <p><b>4 game Modes in total for 20 points(2.5 each).</b></p>
+    <ul>
+  <li>Sniper Only </li>
+  <li>Pistol Only (NightHawk)</li>
+  <li>Symmetric </li>
+  <li>Bomb Defusal</li>
+</ul>
+<p><b>CT OR T </b>to be decided by knife round Optional for Other rounds except Bomb defusal</p>
+
+
+<p><u><b>Suggested Maps</b></u></p>
+
+
+<ol>
+  <li>Sniper Only</li>
+  <ul><li>108_AWP_TEMPLE</li></ul>
+
+  <li>Pistol Only</li>
+  <ul><li>aim_deagle8k_go_2</li></ul>
+  
+
+  <li>Symmetric (Any gun)</li>
+  <ul><li>Symmetric (Any gun)</li></ul>
+  
+
+  <li>Bomb Defusal</li>
+  <ul><li>De_Aztec</li></ul>
+  
+
+</ol>
+
+  </div>
+
         </div>
 </div>
 

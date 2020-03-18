@@ -8,10 +8,8 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>ADF Sports Meet</title>
-
-
-<link rel="icon" type="image/png" href="{% static 'adf-sports.png' %}"/>
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="icon" type="image/png" href="{% static 'adf-sports.png' %}"/>
         <!-- <link href="css/styles.css" rel="stylesheet" /> -->
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
@@ -53,12 +51,8 @@
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                             ></a>
                             <div class="collapse" id="collapseLayouts1" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <!-- <a class="nav-link" href="layout-static.html">Table Tennis</a> -->
-                                <!-- <a class="nav-link" href="layout-sidenav-light.html">Badminton</a> -->
-                                <!-- <a class="nav-link" href="layout-sidenav-light.html">Chess</a> -->
-                                <a class="nav-link" href="http://localhost:8000/cricketrules/">Cricket</a>
+                                  <a class="nav-link" href="http://localhost:8000/cricketrules/">Cricket</a>
                                 
                                 <a class="nav-link" href="http://localhost:8000/counterstrike/">Counter-Strike</a>
                                  <a class="nav-link" href="http://localhost:8000/football/">Football</a>
@@ -69,6 +63,9 @@
                                 ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 PointsSystem</a
                             >
+                            
+                           
+
                             
                         </div>
                     </div>
@@ -84,19 +81,83 @@
                 </main>
                 <footer class="py-4 bg-light mt-auto">
 
-                   <!--  <div class="container-fluid">
-
-                        <div class="card mb-4" width="100%" cellspacing="0">
-                            <div class="card-header"><i class="fas fa-table mr-1"></i>DataTable Example</div>
-                            <div class="card-body" >
-  <iframe src="http://localhost:3000/public/dashboard/b3d279be-9df6-4763-8cda-ce8c94c8fc16" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
-                        </div>
-                         </div>
-                         <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> -->
-
                          <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
-            <iframe style="width: 100vw;height: 100vh;position: relative; " src="http://localhost:3000/public/dashboard/353334da-a1c8-4b2b-b387-5f60e3ea0bd1" frameborder="0" allowfullscreen scrolling="yes" ></iframe>
+
+            <style>
+  .jumbotron {
+  position:relative;
+  overflow:hidden;
+}
+
+.jumbotron .container {
+  position:relative;
+  z-index:2;
+  
+  background:rgba(0,0,0,0.2);
+  padding:2rem;
+  border:1px solid rgba(0,0,0,0.1);
+  border-radius:3px;
+}
+
+.jumbotron-background {
+  object-fit:cover;
+  font-family: 'object-fit: cover;';
+  position:absolute;
+  top:0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  opacity:0.5;
+}
+
+img.blur {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+
+}
+
+  </style>
+<div class="jumbotron jumbotron-fluid bg-dark">
+  
+  <div class="jumbotron-background">
+    <img src="{% static 'bgf.jpg' %}" class="blur">
+  </div>
+
+  <div class="container text-white">
+    <h1>Football Rules</h1>
+<p>1. The rules for five-a-side football are essentially the same as they are for 11-a-side football in terms of what is permissible and what is not.</p>
+<p>2. Each team has to wear a uniform jersey/`bips`. </p>
+<p>3. Every player has to wear a sports shoe but encouraged to wear a turf (firm pitch) football boot.</p>
+<p>4. Every player is encouraged to wear shin guards and the goalkeeper, gloves.</p>
+<p>5. Each half is of 20 mins with 5 mins break.</p>
+<p>6. Each team should consist of 12 players - 5 + 3 (subs) + 4 (reserves) </p>
+<p> 7. At the end of the tournament, at least 8 players should have participated in the game.</p>
+<p>8. Once the '12' members squad is filled, replacement of any those players will not be allowed during the tournament.</p>
+<p>9. Once the game starts, the 5 + 3 will only allowed to play a game rolling substitutions between them.</p>
+<p>10. Rolling substitution, referee need not be intimated, and the substitutions are allowed when the ball goes out of play.</p>
+<p>11. No throw ins, `kick in` by placing ball in the ground (following the 11’s football rule if we have a kick in - a goal can’t be scored directly from it. Re-kick issued for incorrect attempts).</p>
+<p>12. No corners.</p>
+<p>13. No offside rules.</p>
+<p>14. All free kicks are indirect with at least a one man wall only.</p>
+<p>15. The opposing team must be one meter from the ball when a free kick/kick in is taken.</p>
+<p>16. If a player carries a ball into the corner circle, opponents may not tackle that player the player has 5secs to be counted by the referee, they must leave the corner circle or pass the ball.</p>
+<p>17. Misbehaving, abusive language, body barging onto the walls, sliding tackles are considered fouls and the intensity would decide the type of card issued (Yellow or Red).</p>
+<p>18. Keeper must release the ball within 6 secs.</p>
+<p>19. Keeper should not handle the ball outside the penalty area.</p>
+<p>20. Keeper should not handle a minus/back pass by his own team mate. Even after receiving a touch.</p>
+<p>21. Keeper has the freedom to throw the ball anywhere on the pitch when restarting play.</p>
+<p>22. Keeper is allowed to slide in case of a save inside the D box but two footed tackles will be a punishable offence.</p>
+<p>23. If a player receives a red card he then is banned from the participating any further in that game and his team will be down one man for 2 mins. After 2 mins, another player who wasn’t red carded can join the playing 4.</p>
+<p>24. Two yellow cards will result in a red card. Direct red card carries a one match ban.</p>
+<p>25. Fouls inside the `penalty area` or D box will yield a penalty to the attacking team which can be taken with a step before taking the penalty.</p>
+<p>26. Referee's decision is final, `everyone plays for the whistle`. </p>
+<p>27. The objective will always be to ensure fair play.</p>
+
+
+  </div>
+
         </div>
 </div>
 

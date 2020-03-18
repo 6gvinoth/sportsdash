@@ -4,11 +4,12 @@ import pandas as pd
 mydb = mysql.connector.connect(
       host="localhost",
       user="root",
-      passwd="root",
+      passwd="personify",
       database="adfsports"
 )
 
 mycursor=mydb.cursor()
+
 #input data
 data=pd.read_csv("Teams.csv")
 
@@ -220,5 +221,172 @@ mydb.commit()
 
 
 
+#___carrom_______________________________________________________________________________________________________
+data=pd.read_csv("carrom.csv")
 
+try:
+    query="drop table carrom"
+    mycursor.execute(query)
+except:
+    pass
+query="create table carrom (Matchdate varchar(100))"
+mycursor.execute(query)
+
+data=data.fillna('')
+
+for index,row in data.iterrows():
+    
+    sql="INSERT INTO carrom (Matchdate) VALUES (%s)"
+    val=(row["Match date"],)
+    mycursor.execute(sql, val)
+mydb.commit()
+
+#___cricket_______________________________________________________________________________________________________
+data=pd.read_csv("cricket.csv")
+
+try:
+    query="drop table cricket"
+    mycursor.execute(query)
+except:
+    pass
+query="create table cricket(Match_ varchar(100),Date varchar(100))"
+mycursor.execute(query)
+
+data=data.fillna('')
+
+for index,row in data.iterrows():
+    
+    sql="""INSERT INTO cricket (Match_,Date) VALUES (%s,%s)"""
+    val=(row["Match"],row["Date"])
+    mycursor.execute(sql, val)
+mydb.commit()
+
+
+#___batmintion_______________________________________________________________________________________________________
+data=pd.read_csv("batminton.csv")
+
+try:
+    query="drop table batminton"
+    mycursor.execute(query)
+except:
+    pass
+query="create table batminton (Matchdate varchar(100))"
+mycursor.execute(query)
+
+data=data.fillna('')
+
+for index,row in data.iterrows():
+    
+    sql="INSERT INTO batminton (Matchdate) VALUES (%s)"
+    val=(row["Match date"],)
+    mycursor.execute(sql, val)
+mydb.commit()
+
+
+#___chess_______________________________________________________________________________________________________
+data=pd.read_csv("chess.csv")
+
+try:
+    query="drop table chess"
+    mycursor.execute(query)
+except:
+    pass
+query="create table chess (Matchdate varchar(100))"
+mycursor.execute(query)
+
+data=data.fillna('')
+
+for index,row in data.iterrows():
+    
+    sql="INSERT INTO chess (Matchdate) VALUES (%s)"
+    val=(row["Match date"],)
+    mycursor.execute(sql, val)
+mydb.commit()
+
+
+
+#___tabletennis_______________________________________________________________________________________________________
+data=pd.read_csv("tabletennis.csv")
+
+try:
+    query="drop table tabletennis"
+    mycursor.execute(query)
+except:
+    pass
+query="create table tabletennis (Matchdate varchar(100))"
+mycursor.execute(query)
+
+data=data.fillna('')
+
+for index,row in data.iterrows():
+    
+    sql="INSERT INTO tabletennis (Matchdate) VALUES (%s)"
+    val=(row["Match date"],)
+    mycursor.execute(sql, val)
+mydb.commit()
+
+
+
+
+#___cricket_______________________________________________________________________________________________________
+data=pd.read_csv("counterstrike.csv")
+
+try:
+    query="drop table counterstrike"
+    mycursor.execute(query)
+except:
+    pass
+query="create table counterstrike(Match_ varchar(100),Date varchar(100))"
+mycursor.execute(query)
+
+data=data.fillna('')
+
+for index,row in data.iterrows():
+    
+    sql="""INSERT INTO counterstrike (Match_,Date) VALUES (%s,%s)"""
+    val=(row["Match"],row["Date"])
+    mycursor.execute(sql, val)
+mydb.commit()
+
+#___counterstrike_______________________________________________________________________________________________________
+data=pd.read_csv("counterstrike.csv")
+
+try:
+    query="drop table counterstrike"
+    mycursor.execute(query)
+except:
+    pass
+query="create table counterstrike(Match_ varchar(100),Date varchar(100))"
+mycursor.execute(query)
+
+data=data.fillna('')
+
+for index,row in data.iterrows():
+    
+    sql="""INSERT INTO counterstrike (Match_,Date) VALUES (%s,%s)"""
+    val=(row["Match"],row["Date"])
+    mycursor.execute(sql, val)
+mydb.commit()
+
+
+
+#___football_______________________________________________________________________________________________________
+data=pd.read_csv("football.csv")
+
+try:
+    query="drop table football"
+    mycursor.execute(query)
+except:
+    pass
+query="create table football(Match_ varchar(100),Date varchar(100))"
+mycursor.execute(query)
+
+data=data.fillna('')
+
+for index,row in data.iterrows():
+    
+    sql="""INSERT INTO football (Match_,Date) VALUES (%s,%s)"""
+    val=(row["Match"],row["Date"])
+    mycursor.execute(sql, val)
+mydb.commit()
 

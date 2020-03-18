@@ -1,17 +1,17 @@
 S.No,Game,Category,Sub Category,Fixture,Winning Pt/Game,Max Point/Team,Min Player Req,Total Points
-1,Table Tennis,Men,Single,Fixture 3,1,6,12,20
+,,Men,Single,Fixture 3,1,6,12,
 ,,,Double,Fixture 3,1,6,,
-,,Mixed,Mixed Doubles,Fixture 4,1,2,,
+1,Table Tennis,Mixed,Mixed Doubles,Fixture 4,1,2,,20
 ,,Women,Single,Fixture 2,1,4,4,
 ,,,Double,Fixture 4,1,2,,
-2,Badminton,Men,Single,Fixture 3,1,6,12,20
+,,Men,Single,Fixture 3,1,6,12,
 ,,,Double,Fixture 3,1,6,,
-,,Mixed,Mixed Doubles,Fixture 4,1,2,,
+2,Badminton,Mixed,Mixed Doubles,Fixture 4,1,2,,20
 ,,Women,Single,Fixture 2,1,4,4,
 ,,,Double,Fixture 4,1,2,,
 3,Chess,Mixed,Single,Fixture 6,1,20,20,20
-4,Carrom,Men,Single,Fixture 8,1,8,20,20
-,,Women,Single,Fixture 4,1,2,,
+,,Men,Single,Fixture 8,1,8,20,
+4,Carrom,Women,Single,Fixture 4,1,2,,20
 ,,Mixed,Doubles,Fixture 7,1,10,,
 5,Cricket,Men,Team,Fixture 5,5,20,11,20
 6,Counter-Strike,Mixed,Team,Fixture 1,10,20,10,20

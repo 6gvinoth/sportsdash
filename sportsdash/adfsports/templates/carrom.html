@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ADF Sports Meet</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="icon" type="image/png" href="{% static 'adf-sports.png' %}"/>
+        <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            
+            <a href="#" class="navbar-brand">
+          <img src="{% static 'adf-sports.png' %}" alt="logo">
+      </a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button
+            ><!-- Navbar Search-->
+            
+            <!-- Navbar-->
+         
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <br><br>
+                           <a class="nav-link" href="http://localhost:8000/"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard</a
+                            >
+                            <a class="nav-link" href="http://localhost:8000/teams"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Teams</a
+                            >
+                           <a class="nav-link" href="http://localhost:8000/schedule"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Schedule</a
+                            >
+                            
+
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts1" aria-expanded="false" aria-controls="collapseLayouts1"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Sports
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
+                            ></a>
+                            <div class="collapse" id="collapseLayouts1" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+
+                                  <a class="nav-link" href="http://localhost:8000/cricketrules/">Cricket</a>
+                                
+                                <a class="nav-link" href="http://localhost:8000/counterstrike/">Counter-Strike</a>
+                                 <a class="nav-link" href="http://localhost:8000/football/">Football</a>
+                                 <a class="nav-link" href="layout-sidenav-light.html">Carrom</a>
+                            </nav>
+                            </div>
+                             <a class="nav-link" href="http://localhost:8000/pointsystems"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                PointsSystem</a
+                            >
+                            
+
+                            
+                        </div>
+                    </div>
+                   <!--  <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div> -->
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+
+                         <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+
+            <style>
+  .jumbotron {
+  position:relative;
+  overflow:hidden;
+}
+
+.jumbotron .container {
+  position:relative;
+  z-index:2;
+  
+  background:rgba(0,0,0,0.2);
+  padding:2rem;
+  border:1px solid rgba(0,0,0,0.1);
+  border-radius:3px;
+}
+
+.jumbotron-background {
+  object-fit:cover;
+  font-family: 'object-fit: cover;';
+  position:absolute;
+  top:0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  opacity:0.5;
+}
+
+img.blur {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+
+}
+
+  </style>
+<div class="jumbotron jumbotron-fluid bg-dark">
+  
+  <div class="jumbotron-background">
+    <img src="{% static 'carrom.jpg' %}" class="blur">
+  </div>
+
+  <div class="container text-white">
+<h1>Carrom Rules</h1>
+<p>1. Only Boric Acid will be used during the game. Only before starting every set. Only referee will apply the power.</p>
+<p>2. Toss: Referee will hold the coin to choose and the winner can choose the strike or place. If the winner choosing strike, then the opponent will sit on their favourite place then the winner will sit on the left-out place.</p>
+<p>3. Turns proceed clockwise in a game of doubles
+</p>
+<p>4. All shots must be taken from a seated position (Chair cannot be moved) For height adjustment you can add chairs and should be carried throughout the game.
+</p>
+
+<p>5. Only playing hand and arm can touch the board. Elbows must never touch the board. </p>
+
+<p>6. The striker must be touching both base lines. (no half red shots allowed)</p>
+
+<p>7. The red coin cannot be pocketed until you first pocket one of your pieces otherwise two follows need to be pocketed.</p>
+
+<p>8. The red coin and follow are covered in same strike then red is covered. If opponent coin is covered in the same strike than red will be back to center if the player doesn’t pocket their follow.</p>
+
+<p>9. If the Centre Circle is partially or completely covered by other C/M, the Queen shall be placed so as to occupy most of the uncovered portion or in any position adjacent to the Centre Circle in such a way so that it is not easy to pocket for the player having his turn. The placing of the Queen by the Umpire, in such a situation, shall be final.</p>
+
+<p>10. Do not touch the coins directly which is in arrow (Applicable only for the arrow which is adjacent to a player).</p>
+
+<p>11. In case if player is playing for white and 2 coins jumped (say one black and one white), then based on who is going to strike now, coins will be placed in center.
+A) If the same player who was playing for white is going to execute shot, then black will be kept in center and behind it white will be placed.
+B) If the next player who will play for black is going to execute shot, then white will be kept in center and behind it black will be placed.</p>
+
+<p>12. If the red and both follow are covered finally and no coins in the board then the striker considered as winner. If minus occurs along with the above scenario, even then also striker wins.
+
+If there are only 2 coins in the board(one white and one black), if the player is playing for white and he pockets it along with striker, even then he is considered as winner.</p>
+
+<p><u><b>Penalties:</b></u></p>
+
+<p>1. A player should use only one playing hand to touch the board and frame, if other hand holds the board for support and executed any shot a penalty should be returned to the center, if any coin pocketed also will be returned to the center and placed by the opponent.</p>
+<p>2.If anyone other than player touch the board while executing the shot, then who ever touched the board their coin will be given as penalty. </p>
+<p>3. Do not touch the last 3 coins of the opponent directly unless the coin is used as a connecting coin to touch your own coin or red, suppose the player touches the coin directly and fails to touch his coin, a penalty should be returned to the center and placed by the opponent.</p>
+<p>4. When a player pockets his coin along with the striker, the player must place two coins as penalty to play again otherwise pocketed coin alone will be returned to the center and placed by the opponent.</p>
+
+<p>5. When a player pockets the striker along with the red the penalty is not considered. The red is retained to the center of the board and the chance will be cut for the player.</p>
+
+<p>6. If a player disturbs the coin with his fingers a penalty must be placed in the Center by the opponent and the disturbed coin will be replaced in the same position.(In case any coin pocketed during the particular shot will come to center placed by the opponent also player chance will be cut)</p>
+
+<p>7. Players should keep silent while opponents are playing. In doubles partners can discuss while their turn.(In case of violation warning and Penalty will be incurred)</p>
+
+<p>8. All the first minus considered and need to place the coin after you pocket. All penalties made are due.</p>
+
+<p>9. Final minus we need to keep a coin at center by the opponent. (Keeping two coins the striker can play or the chance will be passed to opponent)</p>
+
+<p>10. If any coin considered as foul are pocketed intentionally or by mistake the pocketed coin will returned to the same place and a penalty coin will be returned to center and the opponents will place it. (in case any coin is available in the same place as foul coin then the foul coin also will be placed in center)</p>
+
+<p>11. If any opponent coin considered as foul are pocketed, then coin is covered and need to place your coin as penalty and the opponent can place it at the center.</p>
+
+<p>12. All the penalties are placed with in the center circle anywhere by the opponent. </p>
+
+
+<p>13. Free strikes are not allowed while playing and it will attract penalties.</p>
+
+<p>14. Each player can carry or play on their preferred striker and also in preferred hand.</p>
+
+
+
+      </div>
+
+        </div>
+</div>
+
+                        
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <!-- <script src="js/scripts.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <!-- <script src="assets/demo/datatables-demo.js"></script> -->
+        <script src="{% static 'assets/demo/datatables-demo.js' %}"></script>
+    </body>
+</html>
