@@ -8,8 +8,10 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>ADF Sports Meet</title>
+
+
+<link rel="icon" type="image/png" href="{% static 'adf-sports.png' %}"/>
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-        <link rel="icon" type="image/png" href="{% static 'adf-sports.png' %}"/>
         <!-- <link href="css/styles.css" rel="stylesheet" /> -->
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
@@ -51,8 +53,12 @@
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                             ></a>
                             <div class="collapse" id="collapseLayouts1" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="http://localhost:8000/cricketrules/">Cricket</a>
+                                    <!-- <a class="nav-link" href="layout-static.html">Table Tennis</a> -->
+                                <!-- <a class="nav-link" href="layout-sidenav-light.html">Badminton</a> -->
+                                <!-- <a class="nav-link" href="layout-sidenav-light.html">Chess</a> -->
+                                <a class="nav-link" href="http://localhost:8000/cricketrules/">Cricket</a>
                                 
                                 <a class="nav-link" href="http://localhost:8000/counterstrike/">Counter-Strike</a>
                                  <a class="nav-link" href="http://localhost:8000/football/">Football</a>
@@ -61,9 +67,8 @@
                             </div>
                              <a class="nav-link" href="http://localhost:8000/pointsystems"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                PointsSystem</a
-                            >
-                            <div class="sb-sidenav-menu-heading">--></div>
+                                PointsSystem</a>
+                                <div class="sb-sidenav-menu-heading">--></div>
                            
 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts1"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -76,7 +81,6 @@
                                 <a class="nav-link" href="http://localhost:8000/bvscm2/">B vs C</a>
                                  </nav>
                             </div>
-
                             
                         </div>
                     </div>
@@ -92,75 +96,19 @@
                 </main>
                 <footer class="py-4 bg-light mt-auto">
 
+                   <!--  <div class="container-fluid">
+
+                        <div class="card mb-4" width="100%" cellspacing="0">
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>DataTable Example</div>
+                            <div class="card-body" >
+  <iframe src="http://localhost:3000/public/dashboard/b3d279be-9df6-4763-8cda-ce8c94c8fc16" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+                        </div>
+                         </div>
+                         <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> -->
+
                          <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
-
-            <style>
-  .jumbotron {
-  position:relative;
-  overflow:hidden;
-}
-
-.jumbotron .container {
-  position:relative;
-  z-index:2;
-  
-  background:rgba(0,0,0,0.2);
-  padding:2rem;
-  border:1px solid rgba(0,0,0,0.1);
-  border-radius:3px;
-}
-
-.jumbotron-background {
-  object-fit:cover;
-  font-family: 'object-fit: cover;';
-  position:absolute;
-  top:0;
-  z-index:1;
-  width:100%;
-  height:100%;
-  opacity:0.5;
-}
-
-img.blur {
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
-  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
-
-}
-
-  </style>
-<div class="jumbotron jumbotron-fluid bg-dark">
-  
-  <div class="jumbotron-background">
-    <img src="{% static 'bgi.jpg' %}" class="blur">
-  </div>
-
-  <div class="container text-white">
-
-    <h1>Cricket Rules</h1>
-
-<p>1.The match will be played with a hard red tennis ball <b>(Brand: Vicky red tennis ball)</b></p>
-<p>2. Each team should use at least 16 players across the tournament (4 matches) of which  5(minimum) players shouldn’t have played the tournament in last two years.</p>
-<p>3 .<b>Scenario:</b> In case a team only used  11 players (everyone appeared the cricket tournament in the year past) in three matches, then its mandate to use all 5 new players in the last match.</p>
-<p>4. In case of a shortage of new players then the team should play with 6 + available new players count in the above scenario. <b>No excuse will be given.</b><p>
-<p>5.The match will be for 12 overs. Minimum of 5 bowlers should be used<b>[ With two bowler can bowl a maximum of 3 overs each]</b></p>
-<p>6. Field restriction of 6 in and 5 out will be followed.</p>
-<p>7. <b>Scenario:</b> For the team, playing a match with a shortage of X players, then inner circle restriction<b> (6 in and 5-X out ) </b>should be given a higher preference.</p>
-<p>8. Toss will be thrown sharply at 10:15 AM on the match day and match will begin at 10:30 AM[ Given there is no barrier to start the play ]</p>
-<p>9. After the toss, the representative of a team who wins toss must call his decision immediately before he/she steps out.<b>[Meaning no time will be given for team discussion after the toss to make a call]</b></p>
-<p>10. A maximum of 15 minutes break will be given between the innings.</p>
-<p>11.Umpire decision will be the final decision.<b>[No more views will be encouraged ]</b></p>
-<p>12. 12 man squad details should be provided at the toss time to the officials.</p>
-<p>13. Match will not be delayed due to a shortage of players in a team, play will start with available players.</p>
-<p>14. In the above case, the team can play with substitutes players but players can stand in the field up to 6 overs max, after which the team should play with available players listed in the squad.<b>[No changes will be accepted after a ball being bowled]</b></p>
-<p>15. The player joining in the middle of a match can bowl after one over wait after his/her entry into the playing field.</p>
-<p>16. The rescheduling of the match will happen in case of an unplayable condition like weather and some external disturbance. <b>[ Rescheduling will not be accepted in term of any internal team problems]</b></p>
-<p>17. In case of any internal team issue, it's their wish to play the match or to give a walkover.<b>[ Match will not be rescheduled at any cost]</b></p>
-<p>18. <b>After Bidding, before cricket tournament starts each team must assign at least 4 members to do umpiring throughout the tournament. A day before the match day third team must reveal 3 names from the assigned list who will do umpiring on the match day (before EOD).</p>
-<p>19. Assigned umpires are subjected to change in case of an emergency situation. But three umpires is a must for a match day.</b></p>
-  </div>
-
+            <iframe style="width: 100vw;height: 100vh;position: relative; " src="http://localhost:3000/public/dashboard/1fa381b4-e0e0-4cf2-add7-857376a973a2" frameborder="0" allowfullscreen scrolling="yes" ></iframe>
         </div>
 </div>
 

@@ -24,3 +24,6 @@ def football(request):
 
 def carrom(request):
 	return render(request,'carrom.html',{})	
+
+def bvscm2(request):
+	return render(request,'bvscm2.html',{})	
