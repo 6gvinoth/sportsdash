@@ -14,4 +14,8 @@ urlpatterns = [
     path('football/', TemplateView.as_view(template_name='football.html')),
     path('carrom/', TemplateView.as_view(template_name='carrom.html')),
     path('bvscm2/', TemplateView.as_view(template_name='bvscm2.html')),
+    path('avscm3/', TemplateView.as_view(template_name='avscm3.html')),
+    path('avsbm1/', TemplateView.as_view(template_name='avsbm1.html')),
+path('cricketdash/', TemplateView.as_view(template_name='cricketdash.html')),
+
 ]

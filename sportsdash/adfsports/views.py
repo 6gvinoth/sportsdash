@@ -27,3 +27,9 @@ def carrom(request):
 
 def bvscm2(request):
 	return render(request,'bvscm2.html',{})	
+
+def avsbm1(request):
+	return render(request,'avsbm1.html',{})	
+
+def cricketdash(request):
+	return render(request,'cricketdash.html',{})	
