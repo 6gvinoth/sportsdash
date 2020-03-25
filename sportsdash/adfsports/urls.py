@@ -1,6 +1,7 @@
 from django.urls import path
 from adfsports import views
 from django.views.generic import TemplateView
+from django.conf.urls import url
 
 
 urlpatterns = [
@@ -17,5 +18,6 @@ urlpatterns = [
     path('avscm3/', TemplateView.as_view(template_name='avscm3.html')),
     path('avsbm1/', TemplateView.as_view(template_name='avsbm1.html')),
 path('cricketdash/', TemplateView.as_view(template_name='cricketdash.html')),
-
+url("teamsscoreapi/", views.teamsscoreapi, name="teamsscore"),
+path('teamsscore/', TemplateView.as_view(template_name='teamsscore.html')),
 ]

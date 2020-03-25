@@ -21,14 +21,14 @@ try:
 except:
     pass
 #create Teams table
-query="create table teamsscore (Match_ varchar(100),Sports varchar(100),Point int,Wonby varchar(10),Lossby varchar(100))"
+query="create table teamsscore (TeamMatch varchar(100),Sports varchar(100),Point int,Wonby varchar(10),Lossby varchar(10))"
 mycursor.execute(query)
 
 data=data.fillna('')
 
 for index,row in data.iterrows():
     
-    sql="INSERT INTO teamsscore (Match_,Sports,Point,Wonby,Lossby) VALUES (%s,%s,%s,%s,%s)"
-    val=(row["Match"],row["Sports"],row["Point"],row["Wonby"],row["Lossby"])
+    sql="INSERT INTO teamsscore (TeamMatch,Sports,Point,Wonby,Lossby) VALUES (%s,%s,%s,%s,%s)"
+    val=(row["TeamMatch"],row["Sports"],row["Point"],row["Wonby"],row["Lossby"])
     mycursor.execute(sql, val)
 mydb.commit()
