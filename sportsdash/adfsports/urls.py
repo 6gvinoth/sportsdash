@@ -19,5 +19,5 @@ urlpatterns = [
     path('avsbm1/', TemplateView.as_view(template_name='avsbm1.html')),
 path('cricketdash/', TemplateView.as_view(template_name='cricketdash.html')),
 url("teamsscoreapi/", views.teamsscoreapi, name="teamsscore"),
-path('teamsscore/', TemplateView.as_view(template_name='teamsscore.html')),
+path('teamsscore/UBwMEShrfCVmu5WE', TemplateView.as_view(template_name='teamsscore.html')),
 ]

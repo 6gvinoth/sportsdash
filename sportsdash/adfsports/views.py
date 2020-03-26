@@ -39,6 +39,7 @@ def cricketdash(request):
 
 @csrf_exempt
 def teamsscoreapi(request):
+    
     body = json.loads(request.body.decode("utf-8"))
     TeamMatch = body.get("TeamMatch", "")
     Sports = body.get("Sports", "")
